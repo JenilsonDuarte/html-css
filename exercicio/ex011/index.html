@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Míias em HTML5</title>
+</head>
+<body>
+    <h1>Imagem Dinamica</h1>
+    <p>Tente abrir esse site em varios dispositivos diferentes, ou aumente e diminua o tamanho do navegador.</p>
+    <picture>
+        <source media="(max-width: 750px )" srcset="imagens/img-p.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="imagens/img-m.png" type="image/png">
+        <img src="imagens/img-g.png" alt="Imagem flexivel">
+    </picture>
+    <h1>Reproduzindo audio</h1>
+    <p>Vamos aprender a reproduzir audios em HTML5.</p>
+    <audio src="Heal You - Freedom Trail Studio.mp3" controls autoplay></audio>
+    <h1>Reproduzindo audio</h1>
+    <p>2 opçao de audio</p>
+    <audio preload="metadata"autoplay controls loop>
+        <source src="Heal You - Freedom Trail Studio.mp3" type="audio/mpeg">
+        <source src="Heal You - Freedom Trail Studio.ogg" type="audio/ogg">
+        <source src="Heal You - Freedom Trail Studio.wav" type="audio/wav"> <!--Evitar usar wav pois, é um arquivo muito grande-->
+        <p>Infelizmente seu navegador não consegue reproduzir áudio. <a href="Heal You - Freedom Trail Studio.mp3">Clique aqui para fazer o dowload em mp3</a></p>
+    </audio>
+</body>
+</html>
